@@ -1,55 +1,79 @@
-# STOK_PRO — Laravel Inventory Management
+# 📦 STOCKPRO — Sistem Informasi Stok Barang
 
-Aplikasi manajemen stok berbasis Laravel 9, PHP 8.0.30+, MySQL/MariaDB, Bootstrap 5.
+Aplikasi web untuk mengelola stok barang secara praktis, terstruktur, dan efisien. Projek ini dikembangkan menggunakan Laravel sebagai framework utama.
 
-## Fitur saat ini
-- Login/logout admin
-- Dashboard statistik dan peringatan stok minimum
-- CRUD produk, kategori, supplier
-- Transaksi stok masuk dan keluar dengan pemeriksaan stok
-- Riwayat transaksi dan filter tanggal/jenis
-- Laporan persediaan dan cetak melalui browser (Print / Save as PDF)
-- Responsive desktop dan HP
+## 🚀 Fitur Utama
 
-## Instalasi di Windows + XAMPP
-1. Ekstrak folder `STOCKPRO` ke `D:\APK STOK_PRO\STOCKPRO`.
-2. Pastikan folder ini memiliki file `artisan` di akar folder.
-3. Buka CMD:
-   ```bat
-   cd /d "D:\APK STOK_PRO\STOCKPRO"
+* Pengelolaan data barang
+* Pencatatan stok barang
+* Tambah, lihat, edit, dan hapus data
+* Pengelolaan data menggunakan database
+* Antarmuka web yang mudah digunakan
+
+## 🛠️ Teknologi
+
+* **Framework:** Laravel 9
+* **Bahasa Pemrograman:** PHP
+* **Database:** MySQL
+* **Web Server:** Apache
+* **Development Environment:** XAMPP
+
+## ⚙️ Cara Instalasi
+
+1. Clone repository ini:
+
+   ```bash
+   git clone https://github.com/yusman2004/STOCKPRO.git
    ```
-4. Pastikan PHP dan Composer terpasang:
-   ```bat
-   php -v
-   composer -V
+
+2. Masuk ke folder projek:
+
+   ```bash
+   cd STOCKPRO
    ```
-5. Install dependency:
-   ```bat
+
+3. Instal dependensi Laravel:
+
+   ```bash
    composer install
    ```
-6. Salin `.env.example` menjadi `.env`:
-   ```bat
+
+4. Salin file konfigurasi `.env.example` menjadi `.env`.
+
+   ```bash
    copy .env.example .env
    ```
-7. Buat database bernama `stockpro` melalui phpMyAdmin, lalu jalankan:
-   ```bat
+
+5. Buat application key:
+
+   ```bash
    php artisan key:generate
-   php artisan migrate --seed
    ```
-8. Jalankan:
-   ```bat
+
+6. Buat database melalui phpMyAdmin, lalu sesuaikan konfigurasi database pada file `.env`.
+
+7. Jalankan migrasi database:
+
+   ```bash
+   php artisan migrate
+   ```
+
+8. Jalankan aplikasi:
+
+   ```bash
    php artisan serve
    ```
-9. Buka `http://127.0.0.1:8000`.
 
-## Login demo
-- Email: `admin@stockpro.test`
-- Password: `Admin123!`
+9. Buka aplikasi melalui browser:
 
-Ganti password demo sebelum aplikasi dipakai secara nyata atau dijual ke pelanggan.
+   `http://127.0.0.1:8000`
 
-## Catatan
-- Bootstrap dan Bootstrap Icons dimuat dari CDN, sehingga tampilan memerlukan internet.
-- Cetak laporan menggunakan dialog Print browser; pilih "Save as PDF" untuk membuat PDF.
-- Export XLSX, upload gambar, multi-user role granular, backup otomatis, dan pengujian deployment belum termasuk dalam starter ini.
-- Jangan unggah `.env` atau kredensial database ke repositori publik.
+## 👨‍💻 Pembuat
+
+**YUSMAN TELAUMBANUA**
+
+Projek ini dibuat oleh YUSMAN TELAUMBANUA sebagai pengembangan aplikasi web untuk pengelolaan stok barang.
+
+---
+
+© 2026 YUSMAN TELAUMBANUA. All rights reserved.
